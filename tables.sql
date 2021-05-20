@@ -29,9 +29,9 @@ CREATE TABLE `Address` (
 
 CREATE TABLE `Rooms` ( 
     `Room_id` INT NOT NULL AUTO_INCREMENT , 
-    `Name` INT NOT NULL AUTO_INCREMENT , 
-    `Size` VARCHAR(128) NOT NULL ,
-    `Number` TEXT NOT NULL ,  
+    `Name` VARCHAR(128) NOT NULL ,
+    `size` SMALLINT NOT NULL , 
+ --   `Number` SMALLINT NULL ,  
     `Floor` VARCHAR(128)  NULL , 
     PRIMARY KEY  (`Room_id`)
 );
