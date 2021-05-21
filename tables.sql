@@ -38,15 +38,25 @@ CREATE TABLE `Rooms` (
 
 
 CREATE table "INSTRUCTOR" (
-    "ID"            NUMBER NOT NULL,
+    "ID"            INT NOT NULL,
     "FIRST_NAME"    VARCHAR2(50) NOT NULL,
     "LAST_NAME"     VARCHAR2(50) NOT NULL,
     "EMAIL"         VARCHAR2(255) NOT NULL,
     "PHONE"         VARCHAR2(20) NOT NULL,
     "DATE_OF_BARTH" DATE NOT NULL,
-    "CREDIT_CARD"   NUMBER NOT NULL,
+    "CREDIT_CARD"   INT NOT NULL,
     "GENDER"        VARCHAR2(50) NOT NULL,
     "ROLE"          VARCHAR2(50) NOT NULL,
-    "DEPARTMENT_ID" NUMBER NOT NULL,
+    "DEPARTMENT_ID" INT NOT NULL,
     PRIMARY KEY ("ID")
 );
+
+CREATE table "EXAM" (
+    "ID"                 INT NOT NULL,
+    "ENROLLED_COURSE_ID" INT NOT NULL,
+    "ROOM_ID"            INT NOT NULL,
+    "TIME"               TIME NOT NULL,
+    "INSTRUCTOR_ID"      INT NOT NULL,
+    PRIMARY KEY ("ID")
+);
+
