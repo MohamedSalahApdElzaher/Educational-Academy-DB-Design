@@ -59,4 +59,29 @@ CREATE table "EXAM" (
     "INSTRUCTOR_ID"      INT NOT NULL,
     PRIMARY KEY ("ID")
 );
+create table Courses(
+  id NUMBER(4) not null,
+  name VARCHAR(20) not NULL,
+  hours number(3) not null,
+  details VARCHAR2(100),
+  department_id INT , 
+  CONSTRAINT pk_courses PRIMARY KEY (id),
+  constraint fk_cours__department foreign key (department_id)
+  REFERENCES Departmente(Department_id)
+);
+create table Enrolled_courses(
 
+        id number (4) not null,
+        student_id int not null,
+        instructor_id int not null,
+        course_id number(4) not null,
+        rooms_id int not null,
+        department_id int not null,
+        CONSTRAINT pk_enroll PRIMARY key (id),
+        CONSTRAINT fk_course_enroll FOREIGN key(course_id) REFERENCES Courses (id),
+        CONSTRAINT fk_department_enroll FOREIGN key(department_id) REFERENCES  Departmente(Department_id),
+        CONSTRAINT fk_student_enroll FOREIGN key(student_id) REFERENCES Student (id),
+        CONSTRAINT fk_instructor_enroll FOREIGN key(instructor_id) REFERENCES  INSTRUCTOR(id),
+        CONSTRAINT fk_rooms_enroll FOREIGN key(rooms_id) REFERENCES Rooms (room_id)
+       
+);
