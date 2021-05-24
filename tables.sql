@@ -5,10 +5,10 @@ CREATE TABLE Student(
     "last_name" VARCHAR2(50) ,
     "date of birth" DATE ,
     "email" VARCHAR2(255) ,
-    "credit card" INT,
+    "credit card" INT NOT NULL,
     "gender" VARCHAR2(6),
     "phone" VARCHAR2(11) ,
-    "levels" INT ,
+    "levels" INT NOT NULL,
     constraint fk_student_department foreign key ("department_id")
 );
 CREATE TABLE `Department` ( 
