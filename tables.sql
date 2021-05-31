@@ -8,7 +8,8 @@ CREATE TABLE Student(
     "gender" VARCHAR2(6),
     "phone" VARCHAR2(11) ,
     "levels" INT NOT NULL,
-    constraint fk_student_department foreign key ("department_id")
+    "depart_id" INT NOT NULL,
+    constraint fk_student_department FOREIGN KEY ("depart_id") REFERENCES Department ("Department_id")
 );
 CREATE TABLE `Department` ( 
     `Department_id` INT NOT NULL AUTO_INCREMENT , 
