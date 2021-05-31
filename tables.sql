@@ -2,7 +2,7 @@ CREATE TABLE Student(
     "id" INT NOT NULL AUTO_INCREMENT, PRIMARY KEY("id"),
     "first_name" VARCHAR2(50) ,
     "last_name" VARCHAR2(50) ,
-    "date of birth" DATE ,
+    "date_of_birth" DATE ,
     "email" VARCHAR2(255) ,
     "credit card" INT NOT NULL,
     "gender" VARCHAR2(6),
