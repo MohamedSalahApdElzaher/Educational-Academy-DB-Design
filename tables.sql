@@ -1,5 +1,5 @@
 CREATE TABLE Student(
-    "id" INT NOT NULL, PRIMARY KEY("id"),
+    "id" INT NOT NULL AUTO_INCREMENT, PRIMARY KEY("id"),
     "first_name" VARCHAR2(50) ,
     "last_name" VARCHAR2(50) ,
     "date of birth" DATE ,
