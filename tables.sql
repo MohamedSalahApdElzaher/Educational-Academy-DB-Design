@@ -86,3 +86,23 @@ create table Enrolled_courses(
         CONSTRAINT fk_rooms_enroll FOREIGN key(rooms_id) REFERENCES Rooms (room_id)
        
 );
+
+
+CREATE TABLE Grades(
+    "student_id" INT NOT NULL,
+    "enrolled_courses_id" INT NOT NULL,
+    "details" VARCHAR2(100) ,
+    constraint fk_student_grades FOREIGN KEY ("student_id") REFERENCES Student ("id"),
+    constraint fk_enrolled_courses FOREIGN KEY ("enrolled_courses_id") REFERENCES Eanrolled_courses ("id")
+);
+
+CREATE TABLE Section(
+    "id" INT NOT NULL AUTO_INCREMENT, PRIMARY KEY("id"),
+    "instructor_id" INT NOT NULL,
+    "time" TIME,
+    "room_id" INT NOT NULL,
+    "enrolled_courses_id" INT NOT NULL,
+    constraint fk_instructor FOREIGN KEY ("instructor_id") REFERENCES INSTRUCTOR ("ID"),
+    constraint fk_room FOREIGN key(room_id) REFERENCES Rooms (room_id)
+    constraint fk_enrolled_courses FOREIGN KEY ("enrolled_courses_id") REFERENCES Eanrolled_courses ("id")
+);
