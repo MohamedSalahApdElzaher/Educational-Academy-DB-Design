@@ -11,7 +11,7 @@ _This is our data base analysis course project, we were assigned by our lecturer
 
 ### Diagram
 
-![drawSQL-export-2021-05-24_01_30](https://user-images.githubusercontent.com/47748059/119280042-be78ba80-bc2f-11eb-87a4-318299496392.png)
+![Blank diagram - Page 1](https://user-images.githubusercontent.com/47748059/120892054-89e00800-c60c-11eb-9e1c-068845419c6c.png)
 
 ### Tools
 
