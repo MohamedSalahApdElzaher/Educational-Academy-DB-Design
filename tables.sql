@@ -88,21 +88,26 @@ create table Enrolled_courses(
 );
 
 
-CREATE TABLE Grades(
-    "student_id" INT NOT NULL,
-    "enrolled_courses_id" INT NOT NULL,
-    "details" VARCHAR2(100) ,
-    constraint fk_student_grades FOREIGN KEY ("student_id") REFERENCES Student ("id"),
-    constraint fk_enrolled_courses FOREIGN KEY ("enrolled_courses_id") REFERENCES Eanrolled_courses ("id")
+CREATE table SECTION (
+    ID                  int NOT NULL,
+    INSTUCTOR_ID        int NOT NULL,
+    TIME                int NOT NULL,
+    ROOM_ID             int NOT NULL,
+    ENROLLED_COURSE_ID  int NOT NULL,
+    constraint pk_section primary key (ID),
+    CONSTRAINT fk_instructor_section FOREIGN key(instructor_id) REFERENCES  INSTRUCTOR(id),
+    CONSTRAINT fk_rooms_section FOREIGN key(rooms_id) REFERENCES Rooms (room_id),
+    CONSTRAINT fk_enrolled_couserses_section FOREIGN key(enrolled_courses_id) REFERENCES Enrolled_courses (id)
 );
 
-CREATE TABLE Section(
-    "id" INT NOT NULL AUTO_INCREMENT, PRIMARY KEY("id"),
-    "instructor_id" INT NOT NULL,
-    "time" TIME,
-    "room_id" INT NOT NULL,
-    "enrolled_courses_id" INT NOT NULL,
-    constraint fk_instructor FOREIGN KEY ("instructor_id") REFERENCES INSTRUCTOR ("ID"),
-    constraint fk_room FOREIGN key(room_id) REFERENCES Rooms (room_id)
-    constraint fk_enrolled_courses FOREIGN KEY ("enrolled_courses_id") REFERENCES Eanrolled_courses ("id")
+CREATE table GARDE(
+    ID                  int NOT NULL,
+    student_id          int NOT NULL,
+    enrolled_course_id  int NOT NULL,
+    exam_id             int NOT NULL,
+    details             varchar2 (200),
+    constraint pk_grade primary key (ID),
+    CONSTRAINT fk_enrolled_couserses_grade FOREIGN key(enrolled_courses_id) REFERENCES Enrolled_courses (id),
+    CONSTRAINT fk_student_grade FOREIGN key(student_id) REFERENCES Student (id),
+    CONSTRAINT fk_exam_grade FOREIGN key(exam_id) REFERENCES EXAM (id)
 );
