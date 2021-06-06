@@ -101,6 +101,7 @@ CREATE table SECTION (
 );
 
 CREATE table GARDE(
+    ID                  int NOT NULL,
     student_id          int NOT NULL,
     enrolled_course_id  int NOT NULL,
     exam_id             int NOT NULL,
