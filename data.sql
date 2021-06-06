@@ -151,6 +151,8 @@ values
 (50,'Architctural','architecture engineering, is an engineering discipline that deals with the technological aspects and multi-disciplinary approach to planning, design, construction and operation of buildings' ,'dr eng/mahmoud')
 
 
+select * from daul ;
+
 INSERT all
 INTO Instructor 
 (id,first_name, last_name, email,phane,date_of_birth,credit_card, gender, role,department_id)
@@ -181,6 +183,9 @@ INTO Instructor
 (id,first_name, last_name, email,phane,date_of_birth,credit_card, gender, role,department_id)
 VALUES
 (6,'mahmoud', 'mahmoud', 'mahmoud@gmail.com',01010101010, '02-05-1982',15444, 'male', 1);
+
+
+select * from daul ;
 
 
 INSERT all
@@ -215,6 +220,34 @@ values
 (6,3,4,5)
 
 
+select * from daul ;
+
+
+INSERT all
+into Rooms
+(Room_id,Name,Size,Number,Floor)
+VALUES
+(1,'t', 50, 1,3);
+
+into Rooms
+(Room_id,Name,Size,Number,Floor)
+VALUES
+(2,'t', 40, 2,1);
+
+into Rooms
+(Room_id,Name,Size,Number,Floor)
+VALUES
+(3,'sb', 15, 19,3);
+
+into Rooms
+(Room_id,Name,Size,Number,Floor)
+VALUES
+(4,'sb', 20, 15,4);
+
+into Rooms
+(Room_id,Name,Size,Number,Floor)
+VALUES
+(5,'sb', 25, 211,2);
 
 
 
