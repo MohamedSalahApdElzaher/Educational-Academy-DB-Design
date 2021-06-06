@@ -151,6 +151,37 @@ values
 (50,'Architctural','architecture engineering, is an engineering discipline that deals with the technological aspects and multi-disciplinary approach to planning, design, construction and operation of buildings' ,'dr eng/mahmoud')
 
 
+INSERT all
+INTO Instructor 
+(id,first_name, last_name, email,phane,date_of_birth,credit_card, gender, role,department_id)
+VALUES
+(1,'ibrahem', 'mohamed', 'ibrahiem@gmail.com',01245786823, '02-03-1983',15987, 'male', 3);
+
+INTO Instructor 
+(id,first_name, last_name, email,phane,date_of_birth,credit_card, gender, role,department_id)
+VALUES
+(2,'mohsen', 'ahmed', 'mohsen@gmail.com',01242386823, '04-04-1964',33333, 'male', 2);
+
+INTO Instructor 
+(id,first_name, last_name, email,phane,date_of_birth,credit_card, gender, role,department_id)
+VALUES
+(3,'fatema', 'mohamed', 'fatema@gmail.com',01222222222, '01-01-1981',11111, 'female', 3);
+
+INTO Instructor 
+(id,first_name, last_name, email,phane,date_of_birth,credit_card, gender, role,department_id)
+VALUES
+(4,'khaled', 'elsaid', 'khaled@gmail.com',012414141414, '01-12-1970',14151, 'male', 4);
+
+INTO Instructor 
+(id,first_name, last_name, email,phane,date_of_birth,credit_card, gender, role,department_id)
+VALUES
+(5,'hasan', 'saeed', 'hasan@gmail.com',01110101010, '02-02-1952',12222, 'male', 1);
+
+INTO Instructor 
+(id,first_name, last_name, email,phane,date_of_birth,credit_card, gender, role,department_id)
+VALUES
+(6,'mahmoud', 'mahmoud', 'mahmoud@gmail.com',01010101010, '02-05-1982',15444, 'male', 1);
+
 
 
 
