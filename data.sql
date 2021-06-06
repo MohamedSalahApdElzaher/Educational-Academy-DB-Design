@@ -189,31 +189,26 @@ into Enrolled_courses
 values
 (1,1,1,1) 
 
-INSERT all
 into Enrolled_courses
 (id,instractor_id,course_id,rooms_id,department_id)
 values
 (2,2,3,4)
 
-INSERT all
 into Enrolled_courses
 (id,instractor_id,course_id,rooms_id,department_id)
 values
 (3,1,3,4,4)
 
-INSERT all
 into Enrolled_courses
 (id,instractor_id,course_id,rooms_id,department_id)
 values
 (4,5,1,3)
 
-INSERT all
 into Enrolled_courses
 (id,instractor_id,course_id,rooms_id,department_id)
 values
 (5,4,1,4)
 
-INSERT all
 into Enrolled_courses
 (id,instractor_id,course_id,rooms_id,department_id)
 values
