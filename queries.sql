@@ -11,3 +11,17 @@ WHERE id = 3;
 
 
 
+SELECT courses.name,exam.time,rooms.name_room 
+
+from exam
+
+LEFT JOIN enrolled_courses
+on exam.enrolled_course_id=enrolled_courses.enrolled_courses_id
+
+LEFT JOIN courses 
+on enrolled_courses.course_id = courses.course_id
+
+left join rooms
+on exam.room_id =rooms.room_id
+
+where enrolled_courses.department_id = 20;
