@@ -17,4 +17,4 @@ _This is our data base analysis course project, we were assigned by our lecturer
 
 - _Oracle database XE V-11c._
 - _SQL DEVELOPER._
-- _Drawing online tool: https://drawsql.app/_
+- _Drawing online tool: https://lucid.app/
