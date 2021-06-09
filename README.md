@@ -1,6 +1,8 @@
 # _Educational Academy Data Base Design_
 
 _This is our data base analysis course project, we were assigned by our lecturer to design a system._
+_Educational academy database holding student data, instructors data, courses data,department data and the data related to the lectures such as the place that the lecture will be taken in and exams and students grades and so on ..._
+
 ### Project process
 
 -  _Choose a Suitable System_.
