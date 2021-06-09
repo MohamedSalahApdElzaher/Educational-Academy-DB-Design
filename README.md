@@ -11,6 +11,12 @@ _Educational academy database holding student data, instructors data, courses da
 - _Download & Install working environment._
 - _Finally Write some SQL commands._
 
+### Tools
+
+- _Oracle database XE V-11c._
+- _SQL DEVELOPER._
+- _Drawing online tool: https://lucid.app/_
+
 ### Diagram
 
 ![Blank diagram - Page 1](https://user-images.githubusercontent.com/47748059/121253355-4d7d0800-c8a9-11eb-8a94-7e0ebdc615c1.png)
@@ -19,8 +25,4 @@ _Educational academy database holding student data, instructors data, courses da
 
 ![196407142_4455199201267422_2660040929581009331_n](https://user-images.githubusercontent.com/47748059/121334472-f82d0f00-c919-11eb-86ec-1b6486ce1e7e.png)
 
-### Tools
 
-- _Oracle database XE V-11c._
-- _SQL DEVELOPER._
-- _Drawing online tool: https://lucid.app/_
