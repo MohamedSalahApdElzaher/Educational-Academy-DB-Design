@@ -13,6 +13,8 @@ _This is our data base analysis course project, we were assigned by our lecturer
 
 ![Blank diagram - Page 1](https://user-images.githubusercontent.com/47748059/121253355-4d7d0800-c8a9-11eb-8a94-7e0ebdc615c1.png)
 
+![Blank diagram - Page 1](https://user-images.githubusercontent.com/47748059/121333169-d8e1b200-c918-11eb-93d2-925050048868.png)
+
 ### Tools
 
 - _Oracle database XE V-11c._
