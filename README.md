@@ -17,6 +17,8 @@ _Educational academy database holding student data, instructors data, courses da
 
 ![Blank diagram - Page 1](https://user-images.githubusercontent.com/47748059/121333169-d8e1b200-c918-11eb-93d2-925050048868.png)
 
+![196407142_4455199201267422_2660040929581009331_n](https://user-images.githubusercontent.com/47748059/121334472-f82d0f00-c919-11eb-86ec-1b6486ce1e7e.png)
+
 ### Tools
 
 - _Oracle database XE V-11c._
